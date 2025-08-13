@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello() {
+            console.log('hai');
+        }
+        sayHello();
+        function add(){
+            let a=5;
+            let b=10;
+            console.log(a+b);
+        }
+        add();
+        let sum=add();
+        //anonymous function
+       let diff= function(){
+            let a=10;
+            let b=5;
+            console.log(a-b);
+        }
+        diff();
+        //arrrow function
+        let sum1=()=>{
+            let a=20;
+            let b=30;
+            console.log(a+b);
+        }
+        sum1();
+        let greet=()=>console.log('welcome');
+        greet()
+        function mul(a,b){
+            let c=a*b;
+            console.log(c);
+            
+        }
+        mul(3,2)
+        mul(5,2 )
+       diff() 
+       let sum2=function(){
+        let a=10;
+        let b=20;
+        console.log(a+b)
+       }
+      // passing fun inside a fun
+       function add1(a){
+            a(5,4);
+       }
+       add1((a,b)=>console.log(a+b));
+       
+
+       let greet2=a=>console.log("hello",a);
+       greet2('meenu')
+       
+
+       function sum3(a,b,c,d,e,f){
+            return a+b+c+d+e+f;
+       }
+       let total=sum3(50,40,60,70,50,60)
+       let avg=total/6;
+       console.log('average=',avg);
+
+
+      ( function mul(){
+        let a=2;
+        let b=5;
+        console.log(a*b);
+        
+       })()
+
+
+       //higher order function
+       function operation(a,f1){
+        return f1(a)
+       }
+       const square=x=>x*x
+       console.log(operation(6,square));
+       
+    </script>
+</body>
+</html>
