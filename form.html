@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 10px;
+            margin-top: 10%;
+            width:max-content;
+            align-items: center;
+            box-shadow: 1px 2px 5px gray;
+            padding: 1%;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        input{
+            padding: 1;
+            border: 1px solid navy;
+            border-radius: 4px;
+            width:90%
+        }
+        button{
+            padding: 2% 9%;
+            background-color: navy;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <label for="">Username:
+            <input type="text" name="username" id="username" >
+            </label>
+            <label for="">Password:
+            <input type="password" name="password" id="password" >
+        </label>
+        <button type='submit'>Login</button>
+    </form>
+<script src="form.js"></script>    
+</body>
+</html>
