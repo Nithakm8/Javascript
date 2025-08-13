@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+const regex=/cat/
+let a='I Love cats'
+console.log(regex.test(a));
+
+let a1='i love cat'
+let b1='i love bat'
+console.log(/.at/.test(a1));
+console.log(/.at/.test(b1));
+//^
+let a2='cat is an animal'
+let b2='i love cat'
+console.log(/^cat/.test(a2));
+console.log(/^cat/.test(b2));
+//$
+console.log(/cat$/.test(a2));
+console.log(/cat$/.test(b2));
+
+//*
+console.log(/cats*$/.test('cat'));
+
+//+
+console.log(/cats+$/.test('cats'));
+
+//?
+console.log(/cats?$/.test('i love catss'));
+
+//\
+console.log(/\./.test('google.com'));
+
+let x='i love cats'
+let y='i love bats'
+let z='i love mats'
+const reg=/[cb]at/
+console.log(reg.test(x));
+console.log(reg.test(y));
+console.log(reg.test(z));
+
+
+const reg1=/[^cb]at/
+console.log(reg1.test(x));
+console.log(reg1.test(y));
+console.log(reg1.test(z));
+
+
+//\d
+console.log(/\d/.test('dsffff23'));
+
+//\D
+console.log(/\D/.test('5454545dd'));
+
+//\w
+console.log(/\w/.test('%%d'));
+
+//\W
+console.log(/\W/.test('%%%'));
+
+//\s
+console.log(/\s/.test('sdsdds d'));
+
+//\S
+console.log(/t\S/.test('t sdsdsddd'));
+
+//phone number checking
+console.log(/^\d{10}/.test('1234567890'));
+console.log(/^\d{10,}/.test('4556485214851555255'));
+console.log(/^\d{10,15}/.test('123456789012546'));
+
+ </script>   
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find
+        let numbers=[1,9,3,2,62,41]
+        let evennum=numbers.find(num=>num%2==0)
+        console.log(evennum);
+
+        //findindex
+        let position=numbers.findIndex(a=>a%2==0)
+        console.log(position);
+
+        //some
+        let isEventPresent=numbers.some(num=>num%2==0)
+        console.log(isEventPresent);
+
+        //every
+        let isAllEventPresent=numbers.every(num=>num%2==0)
+        console.log(isAllEventPresent);
+
+        //flat and isArray
+        let arr=[
+            [1,2,3],
+            [4,5,6]
+        ]
+        let changedArray=arr.flat()
+        console.log(changedArray);
+
+        console.log(Array.isArray(arr));
+        let n='arun'
+        console.log(Array.isArray(n));
+        //stack
+        let stack=[]
+        stack.push(10)
+         stack.push(20)
+          stack.push(30)
+            console.log(stack);
+            stack.pop()
+            console.log(stack);
+            let queue=[]
+            queue.push('arun')
+            queue.push('vinu')
+            queue.shift()
+            console.log(queue);
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=["Apple","Orange","grapes","banana"]
+        fruits.push('pappaya')
+        console.log(fruits);
+        let popped=fruits.pop()
+        console.log(popped)
+        let fruitsshift=fruits.shift()
+        console.log(fruitsshift);
+        console.log(fruits);
+        fruits.unshift('watermelon')
+        console.log(fruits);
+        console.log(fruits.slice(0,2));
+        let vegetables=['potato','onion','cabbage']
+        let mergeArray=fruits.concat(vegetables)
+        console.log(mergeArray);
+        mergeArray.splice(2,2)
+        console.log(mergeArray);
+        mergeArray.splice(2,1,"Beetroot")
+        console.log(mergeArray);
+        console.log(mergeArray.indexOf('Beetroot'));
+        const numbers=[1,30,49,5,40,3,2,1]
+        console.log(numbers.indexOf(2));
+        console.log(numbers.lastIndexOf(1));
+        console.log(numbers.reverse());
+        console.log(numbers.sort());
+        let sFruits=fruits.join(' ')
+        console.log(sFruits);
+         sFruits=fruits.join(',')
+        console.log(sFruits);
+        sFruits=fruits.toString()
+        console.log(sFruits);
+        console.log(fruits.includes('jackfruit'));
+        fruits[1]='Avocado'
+        console.log(fruits);
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

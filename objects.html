@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj1={
+        //     name:"Nithya",
+        //     age:20,
+        //     rollno:12
+        // }
+        // console.log(obj1);
+        
+
+    //object constructor
+    // let obj2=new Object()
+    // obj2.name='Alaa'
+    // obj2.age=20
+    // console.log(obj2);
+
+    //constructor function
+    // function Student(n,a){
+    //     this.name=n
+    //     this.age=a
+    // }
+    // const student1=new Student('kiranya',20)
+    // console.log(student1);
+
+
+    //for...in loop
+    // let student2={name:"Nitha",rollno:20,course:'Mern'}
+    // for(let key in student2){
+    //     console.log(`${key}:${student2[key]}`);
+        
+    // }
+
+    //     class Student{
+    //         // constructor(name,rollno){
+    //         //     this.name=name
+    //         //     this.rollno=rollno
+    //         // }
+    //         setDetails(n,a){
+    //             this.name=n
+    //             this.rollno=a
+    //         }
+    //         getDetails(){
+    //             console.log('Name is:',this.name,'\nRollno:',this.rollno);
+                
+    //         }
+    //     }
+    //     let s1=new Student()
+    //    s1.setDetails('nitha',12)
+    //    console.log(s1);
+    //    s1.class='x'
+    //    console.log('class');
+       
+       
+    //     s1.getDetails( )
+    //  const s1={name:'Niya',Rollno:10}
+    //  s1.class='x'
+    //  console.log(s1);
+
+    //  s1.name='Niya mol'
+    //  console.log(s1);
+
+    //  delete s1.Rollno
+    //  console.log(s1);
+    //  console.log(s1['name']);
+    //  console.log('rollno' in s1);
+    //  console.log(s1.hasOwnProperty('name'));
+    //  let values=Object.values(s1)
+    //  console.log(values);
+    //  let keys=Object.keys(s1)
+    //  console.log(keys);
+    //  let entries=Object.entries(s1)
+    //  console.log(entries);
+     let myMap=new Map()
+     myMap.set('id',4)
+     myMap.set(4,'Number key')
+     console.log(myMap);
+     console.log(myMap.size);
+     console.log(myMap.get('id'));
+     console.log(myMap.has('id'));
+     console.log(myMap.keys());
+     console.log(myMap.values());
+     myMap.delete('id');
+     console.log(myMap);
+     for(let [key,values] of myMap)
+     console.log(key,values);
+     
+     
+     
+     
+     
+     
+     
+     
+        
+        
+    </script>
+</body>
+</html>

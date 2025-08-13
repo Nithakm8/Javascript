@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Names:</h3>
+    <p id="name"></p>
+
+<script>
+    
+let names=[],name
+do{
+name=prompt('Enter name')
+if(name){
+    names.push(name)
+    document.getElementById('name').innerHTML=names
+}
+
+}while(name);
+
+
+</script>    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers=[1,2,3]
+        numbers.forEach((element)=>{
+            console.log(`square of ${element} is ${element*element}`);
+            
+        })
+        let names=['niya','srithik']
+        names.forEach((element,index,names)=>{
+            console.log(`${index},${element}`);
+            
+        })
+
+
+        //map()
+        let number=[1,2,3]
+        let squarednumbers=number.map(element=>{
+            return element*element
+             })
+            console.log(squarednumbers);
+          
+        let num=[1,2,33,65,78,48]
+        let even=num.filter(n=>n%2==0)
+        console.log('original array:',num);
+        console.log('Even numbers:',even);
+        
+
+        //reduce
+        let sum=numbers.reduce((acc,element,index,array)=>{
+            return acc+element
+        },0)
+        console.log("sum=",sum);
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    console.log(/^\d{12}$/.test('gfg123456789125'));
+    const reg=/(\w+)\s(\w+)/
+    console.log('Hello world'.match(reg));
+     const reg1=/(?:\w+)\s(\w+)/
+     const reg2=/(\w+)\s(?<second>\w+)/
+    console.log('hello world'.match(reg1));
+        console.log('hello world'.match(reg2));
+    //  console.log('abcdsdfdfdfabcdsdsdabc'.match(/abc/i));
+     
+    //  const dob='2004:08:04'
+    //  console.log(dob.replace(/:/g,'-'));
+    //  console.log( typeof dob );
+     
+    //  console.log(dob.replace(/(?<year>\d{4}):(?<month>\d{2}):(?<day>\d{2})/,'$<day>/$<month>/$<year>'));
+     
+    //     console.log('hello world'.search(/l/));
+    //     console.log('hello world'.split(/e/));
+        
+ </script>   
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arr=[]
+        let exit=false
+        while(!exit)
+        {
+            let task=Number(prompt('Please enter a task\n1.Add task\n2.edit task\n3.View task\n4.Delete task\n5.Exit'))
+            switch(task){
+             case 1:
+                    arr.push(prompt('Enter task:'))
+                    console.log(arr );
+                    break
+                case 2:
+                    let position=Number(prompt('Enter index position'))
+                    arr[position]=(prompt('Edit Task'))
+                    console.log(arr);
+                    break
+                case 3:alert(arr)
+                
+                        break
+                case 4:let del=Number(prompt('Enter index position to delete:'))
+                        if(del<arr.length){
+                        arr.splice(del,1)
+                        console.log(arr)
+                        }
+                        else{
+                            alert('Please enter correct index position');
+                            
+                        }
+                        break
+                case 5:alert('Exited successfully')
+                        exit=true
+                        break
+                        
+                 default:alert('Wrong Entry')
+                            break
+            } 
+            
+        }
+            
+         
+         
+            
+                
+   </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id='heading'>Welcome</h1> 
+<div class="about">Java</div> 
+<div class="about">program</div>
+<p id='para'>welcome to the world of java</p>
+<input type="text" placeholder="name" value="nitha" id='text1'>
+<p>Industry</p> 
+<script>
+// console.log(document.getElementById('heading'));
+// console.log(document.getElementsByClassName('about'));
+// console.log(document.getElementsByTagName('p'));
+// console.log(document.querySelector('.about'));
+// console.log(document.querySelectorAll('.about'));
+// console.log(document.querySelector('#heading'));
+// console.log(document.querySelector('p'));
+// console.log(document.querySelector('#text1'));
+// document.getElementById('heading').textContent='result'
+// document.getElementById('para').innerHTML='<p>hello world</P>'
+// document.getElementById('text1').setAttribute('class','name')
+// console.log(document.getElementById('text1').getAttribute('class'))
+
+
+const newelmt=document.createElement('div')
+console.log(newelmt.textContent='hello java')
+
+document.getElementById('para').appendChild(newelmt)
+
+document.body.removeChild(document.getElementById('text1'))
+document.getElementById('para').remove()
+
+</script> 
+</body>
+</html>

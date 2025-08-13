@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let user="User1";
+    let paswd="123";
+    let username=prompt('Enter username')
+    let password=prompt('Enter password')
+    if(username==user && password==paswd){
+        alert('Welcome User')
+    }
+    else{
+      let result=true
+      while(result==true){
+        result=confirm('Do you want to login again')
+          if(result==true){
+            let username=prompt('Enter username')
+            let password=prompt('Enter password')
+              if(username==user && password==paswd){
+                alert('Welcome User')
+              }
+          }
+    } }
+    
+      
+    
+    
+
+  </script>  
+</body>
+</html>
