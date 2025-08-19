@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+h2{
+    text-align: center;
+}
+form{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(233, 231, 231);
+    width: 40%;
+    height:30vh;
+    gap:10px;
+}
+label{
+    font-weight: 500;
+}
+
+#studdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+button{
+    color:white;
+    border: none;
+    background-color:navy;
+    padding: 7px 20px 7px 20px;
+ 
+}
+#students{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    padding: 40px;
+    gap:7px;
+   
+}
+#student{
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(233, 231, 231);;
+     border: 1px solid black;
+    
+     padding: 3px;
+     border-radius: 12px;
+     gap:3px;
+}
+
+</style>
+<body>
+<header>
+    <a href="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99qyuByZpUa0xE_ni7HzQJ_kb_eAK8ZqLgQ&s" width="50px" height="50px" alt="logo"></a>
+</header>
+<div id="studdetails">
+<h2>STUDENT DETAILS </h2>
+<form action="" id="form1">
+    <table >
+    <tr><td>
+    <label for="" id="name">NAME</td>
+    <td>
+    <input type="text" id="nameinp" name="name">
+    </label></td></tr>
+    <tr><td>
+    <label for="" id="rollno">ROLLNO</td>
+    <td>
+    <input type="text" id="rollinp" name="rno">
+    </label></td></tr>
+    <tr><td>
+    <label for="" id="class">CLASS</td>
+    <td>
+    <input type="text" id="classinp" name="class">
+    </label></td></tr>
+    </table>
+    <button type="submit">SUBMIT</button>
+</form>
+</div>
+<div id="students">
+</div>
+<script src="studentdetails.js"></script>    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #form{
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            border: 1px solid navy;
+            width:60%;
+            height: 180px;
+            margin: 5%;
+            box-shadow: 2px 2px 5px gray;
+            border: none;
+            border-radius: 12px;
+           
+        }
+       input{
+        padding: 1%;
+        border-radius: 3px;
+        border: 1px solid gray;
+
+       } 
+      
+       button{
+        width:30%;
+        padding: 1%;
+       margin: auto;
+       
+       }
+       span{
+        color: red;
+       }
+    </style>
+</head>
+<body>
+
+<form action="" id="form">
+    <table id="table" >
+    <tr><td>
+    <label for="" id="username">USERNAME</td>
+    <td>
+    <input type="text" id="name" name="name">
+    <span id="usernameError"></span></td>
+    </label>
+    
+    <tr><td>
+    <label for="" id="password">PASSWORD</td>
+     <td>
+    <input type="password" id="password1" name="password">
+    
+    <span id="passwordError"></span></td></label></tr>
+    <tr><td>
+    <label for="" id="dobid">DOB</td>
+    <td>
+    <input type="text" id="dob1" name="dob">
+    </label>
+     <span id="dobError"></span></td></tr>
+    <tr><td>
+    <label for="" id="emailid">EMAIL</td>
+    <td>
+    <input type="email" id="email1" name="email">
+    </label>
+    <span id="emailError"></span></td></tr>
+    <tr><td>
+    <label for="" id="phoneid">PHONE</td>
+    <td>
+    <input type="tel" id="phone1" name="phone">
+    </label>
+    <span id="phoneError"></span></td></tr>
+    </table>
+    <button type="submit">SUBMIT</button>
+</form>
+
+<script src="formvalidation.js"></script>    
+</body>
+
+</html>
